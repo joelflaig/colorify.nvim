@@ -1,10 +1,10 @@
 local fn = vim.fn
 local api = vim.api
-local conf = require("config")
+local conf = require("colorify.config")
 local ns = 1
 
 local get_extmarks = api.nvim_buf_get_extmarks
-local methods = require "methods"
+local methods = require "colorify.methods"
 
 local del_extmarks_on_textchange = function(buf)
   vim.b[buf].colorify_attached = true

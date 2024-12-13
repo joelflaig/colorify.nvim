@@ -1,10 +1,10 @@
 local M = {}
 local api = vim.api
 
-local state = require "state"
+local state = require "colorify.state"
 state.ns = api.nvim_create_namespace "Colorify"
 
-M.attach = require "attach"
+M.attach = require "colorify.attach"
 
 M.run = function()
   api.nvim_create_autocmd({

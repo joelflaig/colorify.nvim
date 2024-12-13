@@ -1,8 +1,8 @@
 local M = {}
 local api = vim.api
 local get_extmarks = api.nvim_buf_get_extmarks
-local conf = require("config")
-local ns = require("state").ns
+local conf = require("colorify.config")
+local ns = require("colorify.state").ns
 
 function M.is_dark(hex)
   hex = hex:gsub("#", "")
